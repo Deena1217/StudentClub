@@ -95,12 +95,12 @@ include 'admin/db_connect.php';
 <div class="row align-items-start">
 <label class="col"><input type="checkbox" class="it_skills" value="Python" onchange="updateSkills()"> Python</label>
 <label class="col"><input type="checkbox" class="it_skills" value="Java" onchange="updateSkills()"> Java</label>
-<label class="col"><input type="checkbox" class="it_skills" value="Python" onchange="updateSkills()"> Python</label>
-<label class="col"><input type="checkbox" class="it_skills" value="Java" onchange="updateSkills()"> Java</label>
-</div>
-<div class="row align-items-start">
 <label class="col"><input type="checkbox" class="it_skills" value="C++" onchange="updateSkills()"> C++</label>
 <label class="col"><input type="checkbox" class="it_skills" value="JavaScript" onchange="updateSkills()"> JavaScript</label>
+</div>
+<div class="row align-items-start">
+<label class="col"><input type="checkbox" class="it_skills" value="Software Installation" onchange="updateSkills()"> Software Installation</label>
+<label class="col"><input type="checkbox" class="it_skills" value="HTML" onchange="updateSkills()"> HTML</label>
 <label class="col"><input type="checkbox" class="it_skills" value="SQL" onchange="updateSkills()"> SQL</label>
 <label class="col"><input type="checkbox" class="it_skills" value="System Analysis" onchange="updateSkills()"> System Analysis</label>
 </div>
@@ -123,8 +123,8 @@ include 'admin/db_connect.php';
 <label class="col"><input type="checkbox" class="it_skills" value="Hardware Maintenance" onchange="updateSkills()"> Hardware Maintenance</label>
 </div>
 <div class="row align-items-start">
-<label class="col"><input type="checkbox" class="it_skills" value="Software Installation" onchange="updateSkills()"> Software Installation</label>
-<label class="col"><input type="checkbox" class="it_skills" value="HTML" onchange="updateSkills()"> HTML</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Project Management" onchange="updateSkills()"> Project Management</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Client Communication" onchange="updateSkills()"> Client Communication</label>
 <label class="col"><input type="checkbox" class="it_skills" value="CSS" onchange="updateSkills()"> CSS</label>
 <label class="col"><input type="checkbox" class="it_skills" value="React" onchange="updateSkills()"> React</label>
 </div>
@@ -146,10 +146,7 @@ include 'admin/db_connect.php';
 <label class="col"><input type="checkbox" class="it_skills" value="IT Strategy" onchange="updateSkills()"> IT Strategy</label>
 <label class="col"><input type="checkbox" class="it_skills" value="Business Analysis" onchange="updateSkills()"> Business Analysis</label>
 </div>
-<div class="row align-items-start">
-<label class="col"><input type="checkbox" class="it_skills" value="Project Management" onchange="updateSkills()"> Project Management</label>
-<label class="col"><input type="checkbox" class="it_skills" value="Client Communication" onchange="updateSkills()"> Client Communication</label>
-</div>
+
 </div>
 </div>
 
@@ -231,7 +228,7 @@ $('#create_account').submit(function(e){
         method: 'POST',
         type: 'POST',
         success:function(resp){
-            alert("Acoount created");
+            alert("Account created");
             if(resp == 1){
                 location.replace('index.php')
                 

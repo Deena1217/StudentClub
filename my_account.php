@@ -93,11 +93,75 @@ include 'admin/db_connect.php';
 
                                             </div>  
                                             <div class="col-md-10">
+<!-- <label for="" class="control-label">IT Skills</label><br> -->
+<div class="row form-group">
+<div class="col-md-10">
 <label for="" class="control-label">IT Skills</label><br>
+<div class="container">
+<div class="row align-items-start">
+<label class="col"><input type="checkbox" class="it_skills" value="Python" onchange="updateSkills()"> Python</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Java" onchange="updateSkills()"> Java</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Python" onchange="updateSkills()"> Python</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Java" onchange="updateSkills()"> Java</label>
+</div>
+<div class="row align-items-start">
+<label class="col"><input type="checkbox" class="it_skills" value="C++" onchange="updateSkills()"> C++</label>
+<label class="col"><input type="checkbox" class="it_skills" value="JavaScript" onchange="updateSkills()"> JavaScript</label>
+<label class="col"><input type="checkbox" class="it_skills" value="SQL" onchange="updateSkills()"> SQL</label>
+<label class="col"><input type="checkbox" class="it_skills" value="System Analysis" onchange="updateSkills()"> System Analysis</label>
+</div>
+<div class="row align-items-start">
+<label class="col"><input type="checkbox" class="it_skills" value="Database Design" onchange="updateSkills()"> Database Design</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Requirements Gathering" onchange="updateSkills()"> Requirements Gathering</label>
+<label class="col"><input type="checkbox" class="it_skills" value="UML" onchange="updateSkills()"> UML</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Database Management" onchange="updateSkills()"> Database Management</label>
+</div>
+<div class="row align-items-start">
+<label class="col"><input type="checkbox" class="it_skills" value="Backup and Recovery" onchange="updateSkills()"> Backup and Recovery</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Database Security" onchange="updateSkills()"> Database Security</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Network Configuration" onchange="updateSkills()"> Network Configuration</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Firewall Management" onchange="updateSkills()"> Firewall Management</label>
+</div>
+<div class="row align-items-start">
+<label class="col"><input type="checkbox" class="it_skills" value="TCP/IP" onchange="updateSkills()"> TCP/IP</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Network Troubleshooting" onchange="updateSkills()"> Network Troubleshooting</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Technical Troubleshooting" onchange="updateSkills()"> Technical Troubleshooting</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Hardware Maintenance" onchange="updateSkills()"> Hardware Maintenance</label>
+</div>
+<div class="row align-items-start">
+<label class="col"><input type="checkbox" class="it_skills" value="Software Installation" onchange="updateSkills()"> Software Installation</label>
+<label class="col"><input type="checkbox" class="it_skills" value="HTML" onchange="updateSkills()"> HTML</label>
+<label class="col"><input type="checkbox" class="it_skills" value="CSS" onchange="updateSkills()"> CSS</label>
+<label class="col"><input type="checkbox" class="it_skills" value="React" onchange="updateSkills()"> React</label>
+</div>
+<div class="row align-items-start">
+<label class="col"><input type="checkbox" class="it_skills" value="Angular" onchange="updateSkills()"> Angular</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Node.js" onchange="updateSkills()"> Node.js</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Data Analysis" onchange="updateSkills()"> Data Analysis</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Machine Learning" onchange="updateSkills()"> Machine Learning</label>
+</div>
+<div class="row align-items-start">
+<label class="col"><input type="checkbox" class="it_skills" value="Statistics" onchange="updateSkills()"> Statistics</label>
+<label class="col"><input type="checkbox" class="it_skills" value="R" onchange="updateSkills()"> R</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Network Security" onchange="updateSkills()"> Network Security</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Penetration Testing" onchange="updateSkills()"> Penetration Testing</label>
+</div>
+<div class="row align-items-start">
+<label class="col"><input type="checkbox" class="it_skills" value="Security Auditing" onchange="updateSkills()"> Security Auditing</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Firewall Configuration" onchange="updateSkills()"> Firewall Configuration</label>
+<label class="col"><input type="checkbox" class="it_skills" value="IT Strategy" onchange="updateSkills()"> IT Strategy</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Business Analysis" onchange="updateSkills()"> Business Analysis</label>
+</div>
+<div class="row align-items-start">
+<label class="col"><input type="checkbox" class="it_skills" value="Project Management" onchange="updateSkills()"> Project Management</label>
+<label class="col"><input type="checkbox" class="it_skills" value="Client Communication" onchange="updateSkills()"> Client Communication</label>
+</div>
+</div>
+</div>
 <!-- Sure, here's the modified HTML code with the "this" argument added to the onchange event for each checkbox: -->
 
 
-<label><input type="checkbox" class="it_skills" value="Python" onchange="updateSkills(this)"> Python</label>
+<!-- <label><input type="checkbox" class="it_skills" value="Python" onchange="updateSkills(this)"> Python</label>
 <label><input type="checkbox" class="it_skills" value="Java" onchange="updateSkills(this)"> Java</label>
 <label><input type="checkbox" class="it_skills" value="C++" onchange="updateSkills(this)"> C++</label>
 <label><input type="checkbox" class="it_skills" value="JavaScript" onchange="updateSkills(this)"> JavaScript</label>
@@ -132,7 +196,7 @@ include 'admin/db_connect.php';
 <label><input type="checkbox" class="it_skills" value="IT Strategy" onchange="updateSkills(this)"> IT Strategy</label>
 <label><input type="checkbox" class="it_skills" value="Business Analysis" onchange="updateSkills(this)"> Business Analysis</label>
 <label><input type="checkbox" class="it_skills" value="Project Management" onchange="updateSkills(this)"> Project Management</label>
-<label><input type="checkbox" class="it_skills" value="Client Communication" onchange="updateSkills(this)"> Client Communication</label>
+<label><input type="checkbox" class="it_skills" value="Client Communication" onchange="updateSkills(this)"> Client Communication</label> -->
 
 
 <!-- Now, each checkbox will pass the `this` argument to the `updateSkills` function when it's checked or unchecked. -->
