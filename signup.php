@@ -146,6 +146,11 @@ include 'admin/db_connect.php';
 <label class="col"><input type="checkbox" class="it_skills" value="IT Strategy" onchange="updateSkills()"> IT Strategy</label>
 <label class="col"><input type="checkbox" class="it_skills" value="Business Analysis" onchange="updateSkills()"> Business Analysis</label>
 </div>
+<div class="row align-items-start">
+
+<label class="col"><input type="checkbox" class="it_skills" value="Robotics" onchange="updateSkills()"> Robotics</label>
+</div>
+
 
 </div>
 </div>
